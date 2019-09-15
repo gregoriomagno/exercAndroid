@@ -5,7 +5,7 @@ android {
     buildToolsVersion "24.0.3"
 
     defaultConfig {
-        applicationId "toast.gregorio.com.mensagenstoast"
+        applicationId "aulaactivity.gregorio.com.aulaactivity"
         minSdkVersion 24
         targetSdkVersion 24
         versionCode 1
