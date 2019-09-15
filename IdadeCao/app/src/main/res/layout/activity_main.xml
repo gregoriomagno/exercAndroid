@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="idadecao.gregorio.com.idadecao.MainActivity"
+    android:background="@android:color/holo_blue_dark">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:background="@drawable/cachorro"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/IdadeCachorro"
+        android:background="#ffffff"
+        android:layout_marginTop="59dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descobrir idade"
+        android:id="@+id/BotaoDescobrirIdade"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/IdadeCachorro"
+        android:layout_alignEnd="@+id/ResultadoIdade"
+        android:layout_alignStart="@+id/ResultadoIdade" />
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="80dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/ResultadoIdade"
+        android:layout_marginTop="25dp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/BotaoDescobrirIdade"
+        android:layout_alignStart="@+id/IdadeCachorro"
+        android:layout_alignEnd="@+id/IdadeCachorro" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Informe a idade do seu cachorro"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
